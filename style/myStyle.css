@@ -1,0 +1,668 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/*The line under the headings*/
+.blueLine {
+  width: 40px;
+  height: 5px;
+  margin: 0 auto 4rem;
+  background-color: #0d6efd;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+/*Fold Area*/
+#slider {
+  min-height: 100vh;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.dropdown-item:focus {
+  color: black;
+}
+.dropstart:hover,
+.dropdown-item:hover {
+  color: #0d6efd !important;
+  background-color: white;
+  transition: color 0.3s;
+}
+li.nav-item.dropdown:hover > ul {
+  display: block;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.dropstart {
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+.dropstart ul {
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+.dropstart:hover ul {
+  display: block;
+}
+.dropstart .dropdown-toggle::before {
+  display: none;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-link.active::after,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 75%;
+}
+@media screen and (max-width: 992px) {
+  .nav-link::after {
+    display: none;
+  }
+  .nav-link:hover {
+    color: #0d6efd;
+    transition: color 0.3s;
+  }
+  .dropstart ul {
+    right: 0;
+    top: 100%;
+    width: 100%;
+  }
+}
+/*Home*/
+#slider div .headTitle h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+#slider div .headTitle .animationSteps {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-top: 2rem;
+}
+#slider div .headTitle .animationSteps::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  animation-name: write;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@media screen and (max-width: 768px) {
+  #slider div .headTitle h1 {
+    font-size: 3rem;
+  }
+  #slider div .headTitle .animationSteps::after {
+    font-size: 1.5rem;
+  }
+}
+/*Animation To display jobs*/
+@keyframes write {
+  0% {
+    content: " | ";
+  }
+  2% {
+    content: "D| ";
+  }
+  4% {
+    content: "De| ";
+  }
+  6% {
+    content: "Des| ";
+  }
+  8% {
+    content: "Desi| ";
+  }
+  10% {
+    content: "Desig| ";
+  }
+  12% {
+    content: "Design| ";
+  }
+  14% {
+    content: "Designe| ";
+  }
+  16% {
+    content: "Designer| ";
+  }
+  17% {
+    content: "Designer| ";
+  }
+  18% {
+    content: "Designer ";
+  }
+  19% {
+    content: "Designer| ";
+  }
+  20% {
+    content: "Designe| ";
+  }
+  21% {
+    content: "Design| ";
+  }
+  22% {
+    content: "Desig| ";
+  }
+  23% {
+    content: "Desi| ";
+  }
+  24% {
+    content: "Des| ";
+  }
+  25% {
+    content: "De| ";
+  }
+  26% {
+    content: "De ";
+  }
+  27% {
+    content: "De| ";
+  }
+  28% {
+    content: "Dev| ";
+  }
+  29% {
+    content: "Deve| ";
+  }
+  30% {
+    content: "Devel| ";
+  }
+  31% {
+    content: "Develo| ";
+  }
+  32% {
+    content: "Develop| ";
+  }
+  33% {
+    content: "Develope| ";
+  }
+  34% {
+    content: "Developer| ";
+  }
+  35% {
+    content: "Developer ";
+  }
+  36% {
+    content: "Developer| ";
+  }
+  37% {
+    content: "Develope| ";
+  }
+  38% {
+    content: "Develop| ";
+  }
+  39% {
+    content: "Develo| ";
+  }
+  40% {
+    content: "Devel| ";
+  }
+  41% {
+    content: "Deve| ";
+  }
+  42% {
+    content: "Dev| ";
+  }
+  43% {
+    content: "De| ";
+  }
+  44% {
+    content: "D| ";
+  }
+  45% {
+    content: "| ";
+  }
+  46% {
+    content: " ";
+  }
+  47% {
+    content: "| ";
+  }
+  48% {
+    content: "F| ";
+  }
+  49% {
+    content: "Fr| ";
+  }
+  50% {
+    content: "Fre| ";
+  }
+  51% {
+    content: "Free| ";
+  }
+  52% {
+    content: "Freel| ";
+  }
+  53% {
+    content: "Freela| ";
+  }
+  54% {
+    content: "Freelan| ";
+  }
+  55% {
+    content: "Freelanc| ";
+  }
+  56% {
+    content: "Freelance| ";
+  }
+  57% {
+    content: "Freelancer| ";
+  }
+  58% {
+    content: "Freelancer ";
+  }
+  59% {
+    content: "Freelancer| ";
+  }
+  60% {
+    content: "Freelance| ";
+  }
+  61% {
+    content: "Freelanc| ";
+  }
+  62% {
+    content: "Freelan| ";
+  }
+  63% {
+    content: "Freela| ";
+  }
+  64% {
+    content: "Freel| ";
+  }
+  65% {
+    content: "Free| ";
+  }
+  66% {
+    content: "Fre| ";
+  }
+  67% {
+    content: "Fr| ";
+  }
+  68% {
+    content: "F| ";
+  }
+  69% {
+    content: "| ";
+  }
+  70% {
+    content: " ";
+  }
+  71% {
+    content: "| ";
+  }
+  72% {
+    content: "Ph| ";
+  }
+  73% {
+    content: "Pho| ";
+  }
+  74% {
+    content: "Phot| ";
+  }
+  75% {
+    content: "Photo| ";
+  }
+  76% {
+    content: "Photog| ";
+  }
+  77% {
+    content: "Photogr| ";
+  }
+  78% {
+    content: "Photogra| ";
+  }
+  79% {
+    content: "Photograp| ";
+  }
+  80% {
+    content: "Photograph| ";
+  }
+  81% {
+    content: "Photographe| ";
+  }
+  82% {
+    content: "Photographer| ";
+  }
+  83% {
+    content: "Photographer ";
+  }
+  84% {
+    content: "Photographer| ";
+  }
+  85% {
+    content: "Photograph| ";
+  }
+  86% {
+    content: "Photograp| ";
+  }
+  87% {
+    content: "Photogra| ";
+  }
+  88% {
+    content: "Photogr| ";
+  }
+  89% {
+    content: "Photog| ";
+  }
+  90% {
+    content: "Photo| ";
+  }
+  91% {
+    content: "Phot| ";
+  }
+  92% {
+    content: "Pho| ";
+  }
+  93% {
+    content: "Ph| ";
+  }
+  94% {
+    content: "P| ";
+  }
+  95% {
+    content: "| ";
+  }
+  96% {
+    content: " ";
+  }
+  97% {
+    content: "| ";
+  }
+}
+/*About*/
+section.sec2 {
+  background-color: #f8f8f8 !important;
+}
+.sec2 .aboutSec .row div .row .skills .progress {
+  background-color: #cde1f8;
+  height: 0.7rem;
+  border-radius: 0;
+}
+.sec2 .aboutSec .row .aboutMeContent .row h2::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #0d6efd;
+  position: absolute;
+  bottom: -10px;
+  left: 0.8rem;
+}
+/*Services*/
+.sec2 .servicesSec .row div .card .card-body .iconCard {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: solid 10px #0d6efd;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+.sec2 .servicesSec .row div .card:hover .card-body .iconCard {
+  color: white;
+  background-color: #0d6efd;
+  border-color: #cde1f8;
+}
+/*Count Works , Experience , Clients And Awards Section*/
+.counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .counter {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}
+.counter .layer .container .row .col-md-3 div .iconCounter {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  font-size: 2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: solid 10px #cde1f8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Work*/
+section#work {
+  background-color: #f8f8f8 !important;
+}
+#work .container .row div .cards .card .card-body .float {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#work .container .row div .cards .card .card-body .float button {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #0d6efd;
+  background-color: white;
+  color: #0d6efd;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  #work .container .row div .cards .card .card-body .float {
+    flex-direction: column;
+  }
+  #work .container .row div .cards .card .card-body .float p {
+    align-self: flex-start;
+  }
+  #work .container .row div .cards .card .card-body .float button {
+    align-self: flex-end;
+  }
+}
+#work .container .row div .cards .card .cardHead {
+  overflow: hidden;
+}
+#work .container .row div .cards .card .cardHead a img {
+  transition: all 1s;
+}
+#work .container .row div .cards:hover .card .cardHead a img {
+  transform: scale(1.3);
+}
+/*Carousel Section*/
+.overlay {
+  background-image: url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.overlay
+  .layer
+  .container
+  #carouselExampleInterval
+  .carousel-indicators
+  > button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .overlay {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}
+/*Blog*/
+#blog {
+  background-color: #f8f8f8 !important;
+}
+#blog .container .row div .blogCard .card .cardHead button {
+  width: fit-content;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+@media screen and (max-width: 375px) {
+  #blog .container .row div .blogCard .card .cardHead button {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    white-space: nowrap;
+  }
+}
+#blog
+  .container
+  .row
+  div
+  .blogCard
+  .card
+  .card-footer
+  .morganPhotoInFootCard
+  .morganPhoto {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+#blog
+  .container
+  .row
+  div
+  .blogCard
+  .card
+  .card-footer
+  .morganPhotoInFootCard
+  .morganPhoto
+  img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/*Contact*/
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#contact .layer .container .contactInfo .row div .getInTouch h2,
+#contact .layer .container .contactInfo .row div .sendMessage h2 {
+  width: fit-content;
+  position: relative;
+}
+#contact .layer .container .contactInfo .row div .getInTouch h2::after,
+#contact .layer .container .contactInfo .row div .sendMessage h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #0d6efd;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+#contact
+  .layer
+  .container
+  .contactInfo
+  .row
+  div
+  .sendMessage
+  .form
+  form
+  .input1
+  input,
+#contact
+  .layer
+  .container
+  .contactInfo
+  .row
+  div
+  .sendMessage
+  .form
+  form
+  .txar
+  textarea {
+  width: 100% !important;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  resize: vertical;
+  transition: all 0.1s;
+}
+#contact
+  .layer
+  .container
+  .contactInfo
+  .row
+  div
+  .sendMessage
+  .form
+  form
+  .input1
+  input:focus,
+#contact
+  .layer
+  .container
+  .contactInfo
+  .row
+  div
+  .sendMessage
+  .form
+  form
+  .txar
+  textarea:focus {
+  outline: solid 4px #cde1f8;
+  border-color: #0d6efd;
+}
+#contact .layer .container .contactInfo .row div .getInTouch .icons a i {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.4rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0d6efd;
+  transition: all 0.5s;
+}
+#contact .layer .container .contactInfo .row div .getInTouch .icons a i:hover {
+  color: white;
+  border-color: #cde1f8;
+  background-color: #0d6efd;
+}
